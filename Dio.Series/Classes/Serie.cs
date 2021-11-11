@@ -30,6 +30,7 @@ namespace Dio.Series
             retorno += "Título: " + this.Titulo + "\n";
             retorno += "Descrição: " + this.Descricao + "\n";
             retorno += "Ano: "+ this.Ano + "\n";
+            retorno += "Excluído: " + this.Excluido;
             return retorno;
         }
 
@@ -41,6 +42,11 @@ namespace Dio.Series
         public int retornaID()
         {
             return this.Id;
+        }
+
+        public bool retornaExlcuido()
+        {
+            return this.Excluido;
         }
 
         public void Excluir()
